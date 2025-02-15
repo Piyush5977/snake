@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("12345.avif");
+    background-position: fixed; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    text-align: center;
+}
+
+#game-arena{
+    width: 600px;
+    height: 500px;
+    background-color: #545236;
+    position: relative;
+    border: 5px solid #472739;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+#play-again{
+    color: black;
+}
+#score-board {
+    background-color: rgb(148, 12, 12);
+    padding: 10px 20px;
+    font-size: 27px;
+    font-weight: 650;
+    border-radius: 6px;
+    color: rgb(5, 248, 127);
+    margin: 15px 0;
+}
+
+.start-button {
+    background-color: orangered;
+    color: white;
+    padding: 15px 120px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: chartreuse;
+    position: absolute;
+    border-radius: 5px;
+}
